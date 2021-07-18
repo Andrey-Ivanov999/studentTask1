@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 20</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 20. События клавиатуры</h1>
+        <section>
+            <p><b>Task 11.</b></p>
+            <p> 1. Выполните в html верстку клавиш клавиатуры. Сверстайте – блок цифровых клавиш от 1 до 0. И ряд клавиш
+                q – p. Добавьте
+                клавишу левый shift, левый alt, левый ctrl, пробел, enter.</p>
+            <p>2. Добавьте на input .i-11 событие onkeypress или onkeyup или onkeydown ( по вашему выбору). Когда
+                событие происходит (
+                ввод символа в input) необходимо подсветить ( добавить класс active) клавише с таким символом. Со всех
+                остальных клавиш
+                – удалить класс active.</p>
+            <p>3. Если вводится следующий символ – повторить удаление active и подсветить клавишу с введенным символом.
+            </p>
+            <p>4. Ограничения проекта – тестируются только указанные клавиши в латинской раскладке. Комбинации клавиш не
+                тестируются.
+                Т.е. нажиматься shift+A, ctrl+shift – не будут. Все символы вводятся в нижнем регистре.</p>
+            <div>
+                <div class="key" data-key="1">1</div>
+                <div class="key" data-key="2">2</div>
+                <div class="key" data-key="3">3</div>
+                <div class="key" data-key="4">4</div>
+                <div class="key" data-key="5">5</div>
+                <div class="key" data-key="6">6</div>
+                <div class="key" data-key="7">7</div>
+                <div class="key" data-key="8">8</div>
+                <div class="key" data-key="9">9</div>
+                <div class="key" data-key="0">0</div>
+                <div class="key" data-key="Shift">Lshift</div>
+                <div class="key" data-key="Alt">Lalt</div>
+                <div class="key" data-key="Control">Lctrl</div>
+            </div>
+            <div>
+                <div class="key" data-key="q">q</div>
+                <div class="key" data-key="w">w</div>
+                <div class="key" data-key="e">e</div>
+                <div class="key" data-key="r">r</div>
+                <div class="key" data-key="t">t</div>
+                <div class="key" data-key="y">y</div>
+                <div class="key" data-key="u">u</div>
+                <div class="key" data-key="i">i</div>
+                <div class="key" data-key="o">o</div>
+                <div class="key" data-key="p">p</div>
+                <div class="key" data-key=" ">Space</div>
+                <div class="key" data-key="Enter">Enter</div>
+            </div>
+            <input type="text" class="i-11">
+            <div class="out-11">
+        </section>
+    </div>
+    <script src="unit_20.js"></script>
+</body>
+
+</html>
